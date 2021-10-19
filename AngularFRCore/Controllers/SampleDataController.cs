@@ -5,7 +5,6 @@ using System.IO;
 
 namespace AngularFRCore.Controllers
 {
-    [Route("api/[controller]")]
     public class SampleDataController : Controller
     {
         [HttpGet("[action]")]

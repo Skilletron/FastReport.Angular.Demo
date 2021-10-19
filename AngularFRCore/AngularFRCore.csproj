@@ -26,11 +26,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="View\SampleData\ShowReport.cshtml" />
+    <Content Remove="Views\SampleData\ShowReport.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="View\SampleData\ShowReport.cshtml" />
+    <None Include="Views\SampleData\ShowReport.cshtml" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
