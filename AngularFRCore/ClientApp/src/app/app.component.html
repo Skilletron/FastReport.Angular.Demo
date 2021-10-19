@@ -1,0 +1,31 @@
+<body>
+<app-nav-menu></app-nav-menu>
+<div class="container">
+      <tr>
+     <td width="150px">
+     </td>
+     <td>
+     <h1>FastReport.Core Demo</h1>
+     <p>Select a report and click the button</p>
+     <div>
+     <div>
+     <input type="radio" id="reportChoice1"
+     name="report" value="Matrix" (click)="this.report = 'Matrix'">
+     <label for="reportChoice1">Matrix</label>
+     <input type="radio" id="reportChoice2"
+     name="report" value="Matrix" (click)="this.report = 'Master-Detail'">
+     <label for="reportChoice2">Master-Detail</label>
+     <input type="radio" id="reportChoice2"
+     name="report" value="Matrix" (click)="this.report = 'Barcode'">
+     <label for="reportChoice2">Barcode</label>
+     </div>
+     <input type="button" (click)="Clicked()" value="Show Report" />
+     <div *ngIf="show">
+     <iframe id="report" height="1000" width="1000" [src]="url | safeUrl"></iframe>
+     </div>
+     </div>
+     </td>
+     </tr>
+    <router-outlet></router-outlet>
+  </div>
+</body>
