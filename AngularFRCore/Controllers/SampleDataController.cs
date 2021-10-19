@@ -3,7 +3,6 @@ using System.Drawing;
 using Microsoft.AspNetCore.Mvc;
 using FastReport.Web;
 using System.IO;
-using AngularFRCore.Models;
 
 namespace AngularFRCore.Controllers
 {
